@@ -1,3 +1,3 @@
-# npm i
-# npm start
-# open index.html
+1. npm i
+2. npm start
+3. open index.html
