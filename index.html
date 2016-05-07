@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <span id="count">
+      countdown js test
+    </span>
+  </body>
+  <script src="countdown.js"></script>
+  <script>
+    (function() {
+      function update() {
+        console.log(countdown(new Date(2000, 0, 1)).toString());
+        var ts = countdown(new Date(2000, 0, 1));
+        countElement = document.getElementById("count");
+        countElement.innerHTML = ts.toString();
+
+        setTimeout(function() {
+          requestAnimationFrame(update);
+        }, 1000);
+      }
+      update();
+    })();
+  </script>
+</html>
